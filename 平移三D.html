@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3D效果</title>
+	<link rel="shotcut icon" type="text/css" href="./images/favicon.ico">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.click {
+			width: 64px;
+			height: 22px;
+			margin-left: 50px;
+			background-color: fuchsia;
+			border: 1px solid red;
+		}
+		.box0 {
+			width: 1px;
+			height: 1px;
+            transition: 8s;
+			margin-top: 200px;
+			margin-left: 600px;
+			position: relative;
+			transform-style: preserve-3d;
+			/*transform-origin: left center left;*/
+			transform: rotateX(45deg) rotateY(45deg);
+		}
+		.box1,.box2,.box3,.box4,.box5,.box6 {
+			width: 158px;
+			height: 158px;
+			margin: 50px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			/*background-image: url(./images/18.jpg);*/
+			background-size: 158px 158px;
+		}
+
+		.box1 {
+			transform: translateZ(-79px);
+			background-image: url(./images/18.jpg);
+		}
+		.box2 {
+			transform: translateZ(79px);
+			background-image: url(./images/19.jpg);
+		}
+
+		.box3 {
+			transform:rotateX(90deg) translateZ(-79px) ;
+
+			background-image: url(./images/20.jpg);
+		}
+
+		.box4 {
+			transform:rotateX(90deg) translateZ(79px) ;
+			background-image: url(./images/21.jpg);
+		}
+
+		.box5 {
+			transform:rotateY(90deg) translateZ(-79px) ;
+			background-image: url(./images/22.jpg);
+		}
+
+		.box6 {
+			transform:rotateY(90deg) translateZ(79px) ;
+			background-image: url(./images/23.jpg);
+		}
+
+        .box0 {
+        	animation-name: myanimation;
+			animation-duration: 20s;
+			animation-timing-function: linear;
+			animation-delay: 0.2s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+			transform: rotateX(45deg) rotateY(45deg);
+        }
+        @keyframes myanimation {
+			0%{
+				transform: rotate3d(1,1,1,0deg);
+			}
+			9%{
+				transform: rotate3d(1,0,1,60deg);
+			}
+			18%{
+				transform: rotate3d(1,1,0,120deg);
+			}
+			27%{
+				transform: rotate3d(0,1,1,180deg);
+			}
+			36%{
+				transform: rotate3d(1,0,1,240deg);
+			}
+			45%{
+				transform: rotate3d(1,1,0,300deg);
+			}
+			54%{
+				transform: rotate3d(0,1,1,360deg);
+			}
+			63%{
+				transform: rotate3d(1,0,1,300deg);
+			}
+			72%{
+				transform: rotate3d(1,1,0,240deg);
+			}
+			81%{
+				transform: rotate3d(0,1,1,180deg);
+			}
+			90%{
+				transform: rotate3d(1,0,1,120deg);
+			}
+			100%{
+				transform: rotate3d(1,1,0,60deg);
+			}
+        }
+        
+		/*.click:hover~div {
+			animation-name: myanimation;
+			animation-duration: 10s;
+			animation-timing-function: linear;
+			animation-delay: 0.2s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="click">click me</div>
+	<div class="box0">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+		<div class="box4"></div>
+		<div class="box5"></div>
+		<div class="box6"></div>
+	</div>
+</body>
+</html>

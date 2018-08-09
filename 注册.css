@@ -1,0 +1,136 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.all {
+	width: 400px;
+	height: 600px;
+	background-color: #fff;
+	margin: auto;
+	margin-top: 60px;
+	border: 1px solid #827B6F;
+}
+.header {
+	width: 100%;
+	height: 60px;
+	background-color: #E4305F;
+}
+.header-text {
+	width: 44px;
+	font-size: 22px;
+	color: white;
+	/*margin: auto;*/
+	margin-left: 178px;
+	padding-top: 15px;
+	display: inline-block;
+}
+.close {
+	font-size: 28px;
+	margin-top: 10px;
+	margin-right: 20px;
+	float: right;
+	color: white;
+	transform:rotate(45deg); 
+}
+.one {
+	width: 340px;
+	height: 54px;
+	margin: 10px auto;
+	background-color: #F4F4F4;
+	border-radius: 10px;
+}
+.left{
+	width: 51%;
+	height: 54px;
+}
+.right {
+	width: 49%;
+	height: 54px;
+}
+.left>span {
+	display: inline-block;
+	line-height: 54px;
+	color: #858A8B;
+}
+.left>span:first-child {
+	margin-left: 50px;
+}
+.left>span:last-child {
+	float: right;
+}
+.right>span {
+	display: inline-block;
+	line-height: 54px;
+	margin-left: 40px;
+	color: #858A8B;
+}
+.all>div:nth-child(2) {
+	margin-top: 30px;
+}
+form>div:last-child {
+	background-color: #E4305F;
+}
+.all>div:nth-child(2)>div:nth-child(1) {
+	float:left; 
+} 
+.all>div:nth-child(2)>div:nth-child(2) {
+	float: right;
+}
+.two>span,.three>div>span {
+	width: 100px;
+	font-size: 17px;
+	color: #6A6A6A;
+	display: inline-block;
+	line-height: 54px;
+	text-indent: 12px;
+	background-color: #F4F4F4 ;
+}
+.two>input{
+	width: 200px;
+	height: 30px;
+	border: none;
+	background-color: #F4F4F4;
+	outline: none;
+}
+.three {
+	background-color: #fff;
+}
+
+.three>div {
+	display: inline-block;
+}
+.three>div>span,.three>div>input {
+	float: left;
+
+}
+.three>div>span {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.three>div>input {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.three>div>input {
+	width: 135px;
+	height: 54px;
+	border: none;
+	display: inline-block;
+	background-color: #F4F4F4;
+	outline: none;
+}
+.three>div>div {
+	height: 54px;
+	line-height: 54px;
+	background-color: #f4f4f4;
+	float: right;
+	margin-left: 25px;
+	border-radius: 10px;
+	color: #6A6A6A;
+	font-size: 16px;
+}
+
+
+
+

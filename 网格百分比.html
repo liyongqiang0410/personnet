@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网格浮动百分比</title>
+	<link rel="shotcut icon" type="text/css" href="./images/favicon.ico">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.contanier {
+			width: 1070px;
+			margin: 10px auto ;
+			border: 2px solid fuchsia;
+		}
+		.row {
+			border: 2px solid lime;
+			/*width: 1046px;*/
+			margin: 10px;
+			height: 24px;
+		}
+		.col {
+			width: 7.728%;
+			height: 24px;
+			display: inline-block;
+			border: 1px solid red;
+		}
+		.row2 {
+			border: 2px solid lime;
+			/*width: 1046px;*/
+			margin: 10px;
+			height: 24px;
+		}
+		.col1,.col2,.col3,.col4,.col5,.col6,.col7 {
+			height: 24px;
+			display: inline-block;
+			border: 1px solid red;
+		}
+
+		.row2>div:nth-child(1) {
+			width: 4%;
+		} 
+		.row2>div:nth-child(2) {
+			width: 16.35%;
+		} 
+		.row2>div:nth-child(3) {
+			width: 5.825%;
+		} 
+		.row2>div:nth-child(4) {
+			width: 25.55%;
+		} 
+		.row2>div:nth-child(5) {
+			width: 16.66%;
+		} 
+		.row2>div:nth-child(6) {
+			width: 8.88%;
+		} 
+		.row2>div:nth-child(7) {
+			width: 18.68%;
+		} 
+
+	</style>
+</head>
+<body>
+	<div class="contanier">
+		<div class="row">
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+			<div class="col"></div>
+		</div>
+		<div class="row2">
+			<div class="col1">不齐</div>
+			<div class="col2">不齐</div>
+			<div class="col3">不齐</div>
+			<div class="col4">不齐</div>
+			<div class="col5">不齐</div>
+			<div class="col6">不齐</div>
+			<div class="col7">不齐</div>
+		</div>
+	</div>
+</body>
+</html>

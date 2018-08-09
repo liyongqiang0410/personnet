@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>平移旋转</title>
+	<link rel="shotcut icon" type="text/css" href="./images/favicon.ico">
+	<style type="text/css">
+		.click {
+			width: 88px;
+			height: 28px;
+			color: teal;
+			font-size: 16px;
+			margin: 100px 0 0 200px;
+			background-size: #887373;
+			border: 1px solid red;
+		}
+		.dynamic {
+			margin:200px;
+			margin-top: 20px;
+			background-image: url(./images/13.jpg);
+			width: 100px;
+			height: 80px;
+			background-size: cover;
+			/*animation-name: moving-rotate;
+			animation-duration: 5s;
+			animation-delay: 1s;
+			animation-timing-function: linear;
+			animation-direction: alternate;
+			animation-iteration-count: 1;*/
+		}
+		.click:hover~div {
+			background-size: cover;
+			animation-name: moving-rotate;
+			animation-duration: 5s;
+			/*animation-delay: 1s;*/
+			animation-timing-function: linear;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}
+		@keyframes moving-rotate {
+			0%{
+				margin-left: 200px;
+				margin-top: 20px;
+				transform: rotateX(10deg);
+			}
+			25%{
+				margin-left: 300px;
+				margin-top: 70px;
+				transform: rotateX(20deg);
+			}
+			50%{
+				margin-left: 400px;
+				margin-top: 130px;
+				transform: rotateX(40deg);
+			}
+
+			75%{
+			margin-left: 500px;
+			margin-top: 200px;
+			transform: rotateX(70deg);
+			}
+			100%{
+			margin-left: 500px;
+			margin-top: 280px;
+			transform: rotateX(100deg);
+			}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="click">click me</div>
+	<div class="dynamic"></div>
+
+</body>
+</html>

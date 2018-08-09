@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>三D</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		/*body {
+			background-color: fuchsia;
+		}*/
+		.all {
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			/*background-color: fuchsia;*/
+			position: relative;
+			top:250px;
+			transform-style: preserve-3d;
+			transform: rotate3d(1,1,1,45deg);
+			animation-name: myAnimation;
+			animation-duration: 20s;
+			animation-timing-function: linear;
+			animation-delay: 0.5s;
+			animation-direction: alternate;
+			animation-iteration-count: infinite;
+		}	
+		.all>div {
+			width: 200px;
+			height: 200px;
+			border: 1px solid red;
+			/*margin-left: 100px;*/
+			line-height: 200px;
+			position: absolute;
+			font-size: 32px;
+			opacity: 0.5;
+		}
+		.all div>span {
+			display: block;
+			width: 20px;
+			height: 20px;
+			margin: auto;
+			text-decoration: underline;
+		}
+		.one {
+			transform: rotateX(90deg) translateZ(-100px) translateY(-100px);
+
+			background-color: red;
+			top: -200px;
+
+		}
+		.two {
+			transform: translateX(-400px) translateZ(-200px);
+			background-color: orange;
+			left: 400px;
+		}
+		.three {
+			transform: rotateY(90deg) translateX(100px) translateZ(-100px);
+			background-color: yellow;
+			left: 200px;
+		}
+		.four {
+			transform: rotateY(-90deg) translateZ(-100px) translateX(-100px);
+			background-color: green;
+			left: -200px;
+		}
+		.five {
+			background-color: blue;
+		}
+		.six {
+			transform: rotateX(-90deg) translateY(100px) translateZ(-100px);
+			background-color: purple;
+			top: 200px;
+		}
+		@keyframes myAnimation {
+			0%{
+				transform: rotate3d(1,1,1,0deg);
+			}
+			9%{
+				transform: rotate3d(1,0,1,60deg);
+			}
+			18%{
+				transform: rotate3d(1,1,0,120deg);
+			}
+			27%{
+				transform: rotate3d(0,1,1,180deg);
+			}
+			36%{
+				transform: rotate3d(1,0,1,240deg);
+			}
+			45%{
+				transform: rotate3d(1,1,0,300deg);
+			}
+			54%{
+				transform: rotate3d(0,1,1,360deg);
+			}
+			63%{
+				transform: rotate3d(1,0,1,300deg);
+			}
+			72%{
+				transform: rotate3d(1,1,0,240deg);
+			}
+			81%{
+				transform: rotate3d(0,1,1,180deg);
+			}
+			90%{
+				transform: rotate3d(1,0,1,120deg);
+			}
+			100%{
+				transform: rotate3d(1,1,0,60deg);
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+		<div class="one"><span>1</span></div>
+		<div class="two"><span>2</span></div>
+		<div class="three"><span>3</span></div>
+		<div class="four"><span>4</span></div>
+		<div class="five"><span>5</span></div>
+		<div class="six"><span>6</span></div>
+	</div>
+</body>
+</html>
